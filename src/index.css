@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 43 33% 95%;
+    --foreground: 207 26% 16%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 207 26% 16%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 207 26% 16%;
+
+    --primary: 152 42% 21%;
+    --primary-foreground: 43 33% 95%;
+
+    --secondary: 144 18% 71%;
+    --secondary-foreground: 152 42% 21%;
+
+    --muted: 40 16% 83%;
+    --muted-foreground: 207 10% 40%;
+
+    --accent: 144 18% 71%;
+    --accent-foreground: 152 42% 21%;
+
+    --destructive: 14 52% 58%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 40 16% 83%;
+    --input: 40 16% 83%;
+    --ring: 152 42% 21%;
+
+    --radius: 0.5rem;
+
+    --forest: 152 42% 21%;
+    --sage: 144 18% 71%;
+    --cream: 43 33% 95%;
+    --charcoal: 207 26% 16%;
+    --stone: 40 16% 83%;
+    --teal: 193 38% 38%;
+    --terracotta: 20 48% 58%;
+    --olive: 104 30% 87%;
+    --mist: 200 30% 90%;
+    --kpi-muted: 45 17% 93%;
+
+    /* Chart palette — use these for all data visualizations */
+    --chart-1: 152 42% 21%;
+    --chart-2: 193 38% 38%;
+    --chart-3: 20 48% 58%;
+    --chart-4: 144 18% 55%;
+    --chart-5: 207 26% 40%;
+    --chart-grid: 40 16% 88%;
+    --chart-axis: 207 10% 50%;
+
+    /* Status colors — use for alerts, badges, progress indicators */
+    --status-success: 152 42% 21%;
+    --status-success-muted: 152 30% 94%;
+    --status-warning: 40 80% 52%;
+    --status-warning-muted: 42 70% 93%;
+    --status-danger: 14 52% 58%;
+    --status-danger-muted: 14 40% 95%;
+    --status-info: 200 30% 90%;
+    --status-info-muted: 200 25% 95%;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 207 26% 16%;
+    --sidebar-primary: 152 42% 21%;
+    --sidebar-primary-foreground: 43 33% 95%;
+    --sidebar-accent: 144 18% 71%;
+    --sidebar-accent-foreground: 152 42% 21%;
+    --sidebar-border: 40 16% 90%;
+    --sidebar-ring: 152 42% 21%;
+  }
+
+  .dark {
+    --background: 207 26% 10%;
+    --foreground: 43 33% 95%;
+    --card: 207 26% 14%;
+    --card-foreground: 43 33% 95%;
+    --popover: 207 26% 14%;
+    --popover-foreground: 43 33% 95%;
+    --primary: 144 18% 71%;
+    --primary-foreground: 207 26% 10%;
+    --secondary: 152 42% 21%;
+    --secondary-foreground: 43 33% 95%;
+    --muted: 207 20% 20%;
+    --muted-foreground: 40 16% 65%;
+    --accent: 152 42% 21%;
+    --accent-foreground: 43 33% 95%;
+    --destructive: 14 52% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 207 20% 22%;
+    --input: 207 20% 22%;
+    --ring: 144 18% 71%;
+    --kpi-muted: 207 20% 18%;
+    --sidebar-background: 207 26% 12%;
+    --sidebar-foreground: 43 33% 95%;
+    --sidebar-primary: 144 18% 71%;
+    --sidebar-primary-foreground: 207 26% 10%;
+    --sidebar-accent: 207 20% 18%;
+    --sidebar-accent-foreground: 43 33% 95%;
+    --sidebar-border: 207 20% 18%;
+    --sidebar-ring: 144 18% 71%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+  h1, h2, h3, h4 {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    font-weight: 700;
+  }
+}
+
+@layer utilities {
+  .font-serif-display {
+    font-family: 'Newsreader', Georgia, serif;
+  }
+  .font-sans-ui {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
