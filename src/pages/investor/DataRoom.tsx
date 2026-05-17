@@ -10,7 +10,7 @@ const categories = [...new Set(dataRoomDocuments.map(d => d.category))];
 export default function DataRoom() {
   return (
     <div className="max-w-7xl mx-auto space-y-6">
-      <PageHeader title="Data Room" description="Structured access to impact reports, methodology, financials, and supporting materials." />
+      <PageHeader title="Data Room" description="Structured repository for impact reporting, clinical methodology, and financial reconciliation." />
 
       {categories.map((cat) => (
         <div key={cat}>

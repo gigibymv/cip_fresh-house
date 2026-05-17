@@ -35,7 +35,7 @@ export default function BeneficiaryVoice() {
     <div className="max-w-7xl mx-auto space-y-6">
       <PageHeader
         title="Beneficiary Voice"
-        description="The third dimension of the Capital Intelligence Platform — direct feedback from the people your programs serve, collected through accessible channels after every meal delivery."
+        description="Qualitative and quantitative beneficiary feedback, aggregated from post-intervention surveys across distribution channels."
         badge={<Badge variant="secondary" className="text-xs tabular-nums">{beneficiaryMetrics.totalResponses} responses this quarter</Badge>}
       />
 

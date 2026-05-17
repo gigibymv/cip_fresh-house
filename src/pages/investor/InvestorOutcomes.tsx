@@ -22,7 +22,7 @@ export default function InvestorOutcomes() {
 
   return (
     <div className="max-w-7xl mx-auto space-y-6">
-      <PageHeader title="Program Outcomes" description="Detailed performance data for your funded programs. Each chart includes a confidence label indicating how the data was collected and verified.">
+      <PageHeader title="Program Outcomes" description="Clinical and operational outcomes data for the portfolio. All metrics include confidence labeling to indicate source methodology.">
         <Button variant="outline" size="sm" className="text-xs gap-1.5" onClick={() => setShowMethodology(!showMethodology)}>
           <Info className="h-3.5 w-3.5" /> Methodology
         </Button>

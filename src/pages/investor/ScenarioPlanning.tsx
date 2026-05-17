@@ -26,7 +26,7 @@ export default function ScenarioPlanning() {
 
   return (
     <div className="max-w-7xl mx-auto space-y-6">
-      <PageHeader title="Scenario Planning" description="Model different funding levels and explore projected outcomes." />
+      <PageHeader title="Scenario Planning" description="Model clinical and operational outcomes based on projected capital allocation." />
 
       <Card>
         <CardContent className="pt-6">

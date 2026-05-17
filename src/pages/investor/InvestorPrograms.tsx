@@ -7,7 +7,7 @@ import { Progress } from "@/components/ui/progress";
 export default function InvestorPrograms() {
   return (
     <div className="max-w-7xl mx-auto space-y-6">
-      <PageHeader title="Programs" description="Active and pilot programs funded through your portfolio." />
+      <PageHeader title="Programs" description="Operational overview of active and pilot interventions in the portfolio." />
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
         {programs.map((p) => (
           <Card key={p.id} className="hover:shadow-md transition-shadow">

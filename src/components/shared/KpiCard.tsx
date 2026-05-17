@@ -19,10 +19,10 @@ export function KpiCard({ title, value, change, period, highlighted, subtitle, d
 
   return (
     <div className={cn(
-      "rounded-2xl p-7 relative flex flex-col justify-between min-h-[170px]",
+      "rounded-2xl p-7 relative flex flex-col justify-between min-h-[170px] premium-card overflow-hidden",
       highlighted
-        ? "bg-gradient-to-br from-chart-1 to-chart-2 text-primary-foreground shadow-md"
-        : "bg-[hsl(var(--kpi-muted))]",
+        ? "bg-gradient-to-br from-forest via-forest to-teal text-primary-foreground border-transparent shadow-lg shadow-forest/20"
+        : "bg-white",
       className
     )}>
       {/* Title row with arrow or icon */}

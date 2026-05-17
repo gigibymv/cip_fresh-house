@@ -15,7 +15,7 @@ import InvestorBenchmarks from "./pages/investor/InvestorBenchmarks";
 import RenewalReadiness from "./pages/investor/RenewalReadiness";
 import ScenarioPlanning from "./pages/investor/ScenarioPlanning";
 import DataRoom from "./pages/investor/DataRoom";
-import AiChat from "./pages/investor/AiChat";
+import AskTheData from "./pages/investor/AskTheData";
 
 import CapitalOverview from "./pages/internal/CapitalOverview";
 import CurrentFunders from "./pages/internal/CurrentFunders";
@@ -48,7 +48,7 @@ const App = () => (
           <Route path="/investor/renewal-readiness" element={<AppLayout><RenewalReadiness /></AppLayout>} />
           <Route path="/investor/scenario-planning" element={<AppLayout><ScenarioPlanning /></AppLayout>} />
           <Route path="/investor/data-room" element={<AppLayout><DataRoom /></AppLayout>} />
-          <Route path="/investor/ai-chat" element={<AppLayout><AiChat /></AppLayout>} />
+          <Route path="/investor/ask-the-data" element={<AppLayout><AskTheData /></AppLayout>} />
           <Route path="/internal/capital-overview" element={<AppLayout><CapitalOverview /></AppLayout>} />
           <Route path="/internal/current-funders" element={<AppLayout><CurrentFunders /></AppLayout>} />
           <Route path="/internal/renewal-scoring" element={<AppLayout><RenewalScoring /></AppLayout>} />

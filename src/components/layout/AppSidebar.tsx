@@ -5,11 +5,10 @@ import {
 } from "lucide-react";
 import { NavLink } from "@/components/NavLink";
 import { useLocation, useNavigate } from "react-router-dom";
-import {
-  Sidebar, SidebarContent, SidebarGroup, SidebarGroupContent, SidebarGroupLabel,
+import { Sidebar, SidebarContent, SidebarGroup, SidebarGroupContent, SidebarGroupLabel,
   SidebarMenu, SidebarMenuButton, SidebarMenuItem, useSidebar,
 } from "@/components/ui/sidebar";
-import freshHouseLogo from "@/assets/fresh-house-logo.png";
+import { CipLogo } from "@/components/shared/CipLogo";
 import { cn } from "@/lib/utils";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 
@@ -25,22 +24,22 @@ const investorGroups = [
     items: [
       { title: "Program Outcomes", url: "/investor/outcomes", icon: BarChart3 },
       { title: "Programs", url: "/investor/programs", icon: BookOpen },
-      { title: "Beneficiary Feedback", url: "/investor/beneficiary-voice", icon: Heart },
+      { title: "Beneficiary Voice", url: "/investor/beneficiary-voice", icon: Heart },
       { title: "Benchmarks", url: "/investor/benchmarks", icon: LineChart },
     ],
   },
   {
     label: "Planning",
     items: [
-      { title: "Renewal Status", url: "/investor/renewal-readiness", icon: RefreshCw },
+      { title: "Renewal Readiness", url: "/investor/renewal-readiness", icon: RefreshCw },
       { title: "Scenario Planning", url: "/investor/scenario-planning", icon: Sliders },
     ],
   },
   {
     label: "Resources",
     items: [
-      { title: "Documents & Reports", url: "/investor/data-room", icon: FolderOpen },
-      { title: "Ask a Question", url: "/investor/ai-chat", icon: MessageSquare },
+      { title: "Data Room", url: "/investor/data-room", icon: FolderOpen },
+      { title: "Ask the Data", url: "/investor/ask-the-data", icon: MessageSquare },
     ],
   },
 ];
@@ -118,9 +117,8 @@ export function AppSidebar() {
       <SidebarContent className="pt-5 px-2">
         {/* Logo */}
         {!collapsed && (
-          <div className="px-4 pb-6 flex items-center gap-3">
-            <img src={freshHouseLogo} alt="Fresh House" className="h-9 w-auto" />
-            <span className="text-lg font-bold text-foreground tracking-tight">Fresh House</span>
+          <div className="px-4 pb-6">
+            <CipLogo />
           </div>
         )}
 

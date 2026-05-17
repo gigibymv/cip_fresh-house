@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,74 +6,74 @@
 
 @layer base {
   :root {
-    --background: 43 33% 95%;
-    --foreground: 207 26% 16%;
+    --background: 0 0% 100%; /* White */
+    --foreground: 210 24% 16%; /* Charcoal */
 
-    --card: 0 0% 100%;
-    --card-foreground: 207 26% 16%;
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 210 24% 16%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 207 26% 16%;
+    --popover-foreground: 210 24% 16%;
 
-    --primary: 152 42% 21%;
-    --primary-foreground: 43 33% 95%;
+    --primary: 160 61% 15%; /* Deep Forest Green */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 144 18% 71%;
-    --secondary-foreground: 152 42% 21%;
+    --secondary: 140 21% 72%; /* Sage Green */
+    --secondary-foreground: 160 61% 15%;
 
-    --muted: 40 16% 83%;
-    --muted-foreground: 207 10% 40%;
+    --muted: 209 11% 44%; /* Muted Slate */
+    --muted-foreground: 210 24% 16%;
 
-    --accent: 144 18% 71%;
-    --accent-foreground: 152 42% 21%;
+    --accent: 180 58% 27%; /* Teal Accent */
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 14 52% 58%;
+    --destructive: 6 61% 61%; /* Soft Red */
     --destructive-foreground: 0 0% 100%;
 
-    --border: 40 16% 83%;
-    --input: 40 16% 83%;
-    --ring: 152 42% 21%;
+    --border: 140 21% 72%;
+    --input: 140 21% 72%;
+    --ring: 160 61% 15%;
 
     --radius: 0.5rem;
 
-    --forest: 152 42% 21%;
-    --sage: 144 18% 71%;
-    --cream: 43 33% 95%;
-    --charcoal: 207 26% 16%;
-    --stone: 40 16% 83%;
-    --teal: 193 38% 38%;
-    --terracotta: 20 48% 58%;
-    --olive: 104 30% 87%;
-    --mist: 200 30% 90%;
-    --kpi-muted: 45 17% 93%;
+    --forest: 160 61% 15%;
+    --sage: 140 21% 72%;
+    --cream: 43 40% 95%;
+    --charcoal: 210 24% 16%;
+    --stone: 140 21% 72%;
+    --teal: 180 58% 27%;
+    --terracotta: 25 81% 52%;
+    --olive: 144 45% 34%; /* Fresh Green */
+    --mist: 0 0% 100%;
+    --kpi-muted: 43 20% 92%;
 
-    /* Chart palette — use these for all data visualizations */
-    --chart-1: 152 42% 21%;
-    --chart-2: 193 38% 38%;
-    --chart-3: 20 48% 58%;
-    --chart-4: 144 18% 55%;
-    --chart-5: 207 26% 40%;
-    --chart-grid: 40 16% 88%;
-    --chart-axis: 207 10% 50%;
+    /* Chart palette */
+    --chart-1: 160 61% 15%; /* Deep Forest Green */
+    --chart-2: 180 58% 27%; /* Teal Accent */
+    --chart-3: 209 11% 44%; /* Muted Slate */
+    --chart-4: 140 21% 72%; /* Sage Green */
+    --chart-5: 25 81% 52%; /* Warm Orange */
+    --chart-grid: 43 30% 90%;
+    --chart-axis: 209 11% 44%;
 
-    /* Status colors — use for alerts, badges, progress indicators */
-    --status-success: 152 42% 21%;
-    --status-success-muted: 152 30% 94%;
-    --status-warning: 40 80% 52%;
-    --status-warning-muted: 42 70% 93%;
-    --status-danger: 14 52% 58%;
-    --status-danger-muted: 14 40% 95%;
-    --status-info: 200 30% 90%;
-    --status-info-muted: 200 25% 95%;
+    /* Status colors */
+    --status-success: 144 45% 34%; /* Fresh Green */
+    --status-success-muted: 144 40% 94%;
+    --status-warning: 25 81% 52%; /* Warm Orange */
+    --status-warning-muted: 25 70% 94%;
+    --status-danger: 6 61% 61%; /* Soft Red */
+    --status-danger-muted: 6 50% 95%;
+    --status-info: 180 58% 27%; /* Teal */
+    --status-info-muted: 180 50% 95%;
 
     --sidebar-background: 0 0% 100%;
-    --sidebar-foreground: 207 26% 16%;
-    --sidebar-primary: 152 42% 21%;
-    --sidebar-primary-foreground: 43 33% 95%;
-    --sidebar-accent: 144 18% 71%;
-    --sidebar-accent-foreground: 152 42% 21%;
-    --sidebar-border: 40 16% 90%;
-    --sidebar-ring: 152 42% 21%;
+    --sidebar-foreground: 210 24% 16%;
+    --sidebar-primary: 160 61% 15%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 140 21% 72%;
+    --sidebar-accent-foreground: 160 61% 15%;
+    --sidebar-border: 43 30% 90%;
+    --sidebar-ring: 160 61% 15%;
   }
 
   .dark {
@@ -114,22 +114,30 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    font-family: 'Inter', system-ui, sans-serif;
   }
   h1, h2, h3, h4 {
-    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
-    font-weight: 700;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-weight: 600;
   }
 }
 
 @layer utilities {
   .font-serif-display {
-    font-family: 'Newsreader', Georgia, serif;
+    font-family: 'Inter', system-ui, sans-serif;
   }
   .font-sans-ui {
-    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    font-family: 'Inter', system-ui, sans-serif;
   }
   .tabular-nums {
     font-variant-numeric: tabular-nums;
+  }
+  
+  .premium-card {
+    @apply bg-card rounded-2xl border border-border/60 shadow-sm transition-all duration-300 hover:shadow-md hover:border-forest/20 hover:-translate-y-0.5;
+  }
+  
+  .glass-card {
+    @apply bg-white/70 backdrop-blur-md border border-white/40 shadow-sm;
   }
 }

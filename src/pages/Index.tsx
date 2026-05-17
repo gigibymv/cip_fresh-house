@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { BarChart3, DollarSign, ArrowRight } from "lucide-react";
-import freshHouseLogo from "@/assets/fresh-house-logo.png";
+import { CipLogo } from "@/components/shared/CipLogo";
 
 const portals = [
   {
@@ -30,12 +30,13 @@ export default function Index() {
     <div className="min-h-screen bg-background flex items-center justify-center p-6 md:p-12">
       <div className="max-w-4xl w-full space-y-16">
         {/* Header */}
-        <div className="text-center space-y-4">
-          <img src={freshHouseLogo} alt="Fresh House" className="h-14 w-auto mx-auto" />
+        <div className="text-center flex flex-col items-center justify-center space-y-6">
+          <div className="scale-125 transform-origin-top">
+            <CipLogo />
+          </div>
           <div>
-            <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground"><h1 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground">Capital Intelligence Platform</h1></h1>
-            <p className="text-muted-foreground mt-2 text-base max-w-lg mx-auto">
-              Track impact, manage renewals, and make data-driven decisions — for nonprofits and their funders.
+            <p className="text-muted-foreground mt-4 text-base max-w-lg mx-auto">
+              Track impact, manage renewals, and make data-driven decisions for nonprofits and their funders.
             </p>
           </div>
         </div>
